@@ -1,0 +1,56 @@
+<div *ngIf="pokemoninfo">
+    <h1 class="Title">Nombre: </h1>
+    <p class="Info">{{pokemoninfo.name}}</p>
+    <h1 class="ContentTitle">
+        categorias
+    </h1>
+    <div class="PokeInfo" *ngIf="pokemoninfo.sprites.back_default">
+        <p>back_default</p>
+        <img [src]="pokemoninfo.sprites.back_default">
+    </div>
+    <div class="PokeInfo"  *ngIf="pokemoninfo.sprites.back_female">
+        <p>back_female</p>
+        <img [src]="pokemoninfo.sprites.back_female">
+    </div>
+    <br>
+    <div class="PokeInfo"  *ngIf="pokemoninfo.sprites.back_shiny">
+        <p>back_shiny</p>
+        <img [src]="pokemoninfo.sprites.back_shiny">
+    </div>
+    <br>
+    <div class="PokeInfo"  *ngIf="pokemoninfo.sprites.front_default">
+        <p>front_default</p>
+        <img [src]="pokemoninfo.sprites.front_default"> 
+    </div>
+    <br>
+    <div class="PokeInfo"  *ngIf="pokemoninfo.sprites.front_shiny">
+        <p>front_shiny</p>
+        <img [src]="pokemoninfo.sprites.front_shiny"> 
+    </div>
+    <br>
+    <div class="PokeInfo"  *ngIf="pokemoninfo.sprites.front_shiny_female">
+        <p>front_shiny_female</p>
+        <img [src]="pokemoninfo.sprites.front_shiny_female">
+    </div>
+
+    <!--p>back_female</p>
+    <img [src]="pokemoninfo.sprites.back_female">
+    <br>
+    <p>back_shiny</p>
+    <img [src]="pokemoninfo.sprites.back_shiny">
+    <br>
+    <p>back_shiny_female</p>
+    <img [src]="pokemoninfo.sprites.back_shiny_female">
+    <br>
+    <p>front_default</p>
+    <img [src]="pokemoninfo.sprites.front_default">
+    <br>
+    <p>front_female</p>
+    <img [src]="pokemoninfo.sprites.front_female">
+    <br>
+    <p>front_shiny</p>
+    <img [src]="pokemoninfo.sprites.front_shiny">
+    <br>
+    <p>front_shiny_female</p>
+    <img [src]="pokemoninfo.sprites.front_shiny_female"-->
+</div>
